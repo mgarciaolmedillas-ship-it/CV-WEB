@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuska | Operaciones Digitales & Automatización con IA</title>
+    <!-- Metadatos SEO / ATS -->
+    <meta name="description" content="Especialista en Operaciones Digitales, Optimización de Flujos de Trabajo e Integración de Inteligencia Artificial para la eficiencia organizativa.">
+    <meta name="keywords" content="Operaciones Digitales, Inteligencia Artificial, Prompt Engineering, Análisis Funcional, Automatización de Procesos, Coaching, Gestión de Proyectos">
+    
+    <!-- Fuentes Google (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --primary: #2563EB; /* Azul Cobalto */
+            --primary-hover: #1D4ED8;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --radius: 16px;
+            --shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            --shadow-hover: 0 20px 30px -10px rgba(37, 99, 235, 0.12);
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 48px;
+            box-shadow: var(--shadow);
+            margin-bottom: 32px;
+            border: 1px solid var(--border);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.25rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #EFF6FF;
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        /* Video Placeholder */
+        .video-box {
+            background: #F1F5F9;
+            border: 2px dashed #CBD5E1;
+            border-radius: var(--radius);
+            aspect-ratio: 4/3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+        }
+
+        .video-box svg {
+            width: 48px;
+            height: 48px;
+            fill: var(--primary);
+            margin-bottom: 12px;
+            opacity: 0.8;
+        }
+
+        /* Secciones */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 32px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+            border-color: #BFDBFE;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Tags de habilidades */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag {
+            background: #F1F5F9;
+            color: var(--text-main);
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Botón Guardar / Descarga */
+        .cta-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- CABECERA PRINCIPAL -->
+        <header class="hero">
+            <div class="hero-text">
+                <span class="badge">Especialista en Eficiencia & Automatización</span>
+                <h1>Anuska</h1>
+                <div class="subtitle">Operaciones Digitales | Integración de IA | Coaching</div>
+                <p>Optimizando flujos de trabajo para liberar a las personas de la monotonía. Combinando más de 1.500 horas de sólido rigor administrativo con inteligencia artificial aplicada y desarrollo personal.</p>
+                <a href="#contacto" class="cta-btn">Contactar conmigo</a>
+            </div>
+            
+            <div class="video-box">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <p style="font-weight: 600; font-size: 0.9rem;">Vídeo de Presentación</p>
+                <span style="font-size: 0.75rem;">Próximamente</span>
+            </div>
+        </header>
+
+        <!-- BLOQUES DE COMPETENCIAS -->
+        <h2 class="section-title">Áreas de Especialización</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <h3>Diseño de Flujos & Automatización</h3>
+                <p>Identificación de cuellos de botella y diseño de procesos donde la IA genera borradores e informes, manteniendo la validación humana en el centro (Human-in-the-Loop).</p>
+                <div class="tags">
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">Optimización</span>
+                    <span class="tag">Integración IA</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Gestión Operativa Avanzada</h3>
+                <p>Más de 1.500 horas acreditadas en gestión documental, tramitación de expedientes y organización eficiente de flujos administrativos complejos.</p>
+                <div class="tags">
+                    <span class="tag">Administración</span>
+                    <span class="tag">Trazabilidad</span>
+                    <span class="tag">Atención Cliente</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Desarrollo Humano & Coaching</h3>
+                <p>Máster en Psicología Holística y Coaching. Enfoque centrado en la persona para acompañar la adaptación tecnológica y potenciar el talento creativo.</p>
+                <div class="tags">
+                    <span class="tag">Gestión del Cambio</span>
+                    <span class="tag">Empatía</span>
+                    <span class="tag">Comunicación</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PROYECTO DESTACADO -->
+        <h2 class="section-title">Proyecto Destacado</h2>
+        <div class="card" style="margin-bottom: 40px;">
+            <h3>Proyecto Renacer — Aplicación Inteligente de Empleo</h3>
+            <p>Desarrollo funcional de una herramienta propia que utiliza la API de Gemini para clasificar ofertas de empleo, analizar encaje de perfiles y generar documentación adaptada de manera automatizada.</p>
+            <div class="tags" style="margin-top: 16px;">
+                <span class="tag">API Gemini</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Prototipado</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
