@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuska | Operaciones Digitales & Automatización con IA</title>
-    <!-- Metadatos SEO / ATS -->
-    <meta name="description" content="Especialista en Operaciones Digitales, Optimización de Flujos de Trabajo e Integración de Inteligencia Artificial para la eficiencia organizativa.">
-    <meta name="keywords" content="Operaciones Digitales, Inteligencia Artificial, Prompt Engineering, Análisis Funcional, Automatización de Procesos, Coaching, Gestión de Proyectos">
+    <title>Anuska | Administración, Operaciones Digitales & IA</title>
+    <meta name="description" content="Especialista en Administración, Gestión Documental, Operaciones Digitales e Integración de IA para la optimización de procesos.">
+    <meta name="keywords" content="Administración, Gestión Documental, Operaciones Digitales, Inteligencia Artificial, Prompt Engineering, Tramitación de Expedientes, Coaching">
     
-    <!-- Fuentes Google (Plus Jakarta Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +15,7 @@
         :root {
             --bg-color: #F8FAFC;
             --card-bg: #FFFFFF;
-            --primary: #2563EB; /* Azul Cobalto */
+            --primary: #2563EB;
             --primary-hover: #1D4ED8;
             --text-main: #1E293B;
             --text-muted: #64748B;
@@ -27,11 +25,7 @@
             --shadow-hover: 0 20px 30px -10px rgba(37, 99, 235, 0.12);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -41,10 +35,7 @@
             padding: 40px 20px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+        .container { max-width: 1000px; margin: 0 auto; }
 
         /* Hero Section */
         .hero {
@@ -69,10 +60,11 @@
         }
 
         .hero-text .subtitle {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             color: var(--primary);
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 20px;
+            line-height: 1.4;
         }
 
         .hero-text p {
@@ -92,7 +84,7 @@
             margin-bottom: 16px;
         }
 
-        /* Video Placeholder */
+        /* Video Box */
         .video-box {
             background: #F1F5F9;
             border: 2px dashed #CBD5E1;
@@ -115,22 +107,18 @@
             opacity: 0.8;
         }
 
-        /* Secciones */
+        /* Estructura general */
         .section-title {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin: 40px 0 20px 0;
             color: var(--text-main);
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 24px;
-            margin-bottom: 40px;
         }
 
         .card {
@@ -140,18 +128,26 @@
             border: 1px solid var(--border);
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
+            margin-bottom: 20px;
         }
 
         .card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-2px);
             box-shadow: var(--shadow-hover);
             border-color: #BFDBFE;
         }
 
         .card h3 {
             font-size: 1.2rem;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             color: var(--text-main);
+        }
+
+        .card .date {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 12px;
         }
 
         .card p {
@@ -159,7 +155,6 @@
             font-size: 0.95rem;
         }
 
-        /* Tags de habilidades */
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -176,7 +171,7 @@
             font-weight: 500;
         }
 
-        /* Botón Guardar / Descarga */
+        /* Botones */
         .cta-btn {
             display: inline-block;
             background: var(--primary);
@@ -188,14 +183,10 @@
             transition: background 0.2s;
         }
 
-        .cta-btn:hover {
-            background: var(--primary-hover);
-        }
+        .cta-btn:hover { background: var(--primary-hover); }
 
         @media (max-width: 768px) {
-            .hero {
-                grid-template-columns: 1fr;
-            }
+            .hero { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -203,14 +194,15 @@
 
     <div class="container">
         
-        <!-- CABECERA PRINCIPAL -->
+        <!-- CABECERA -->
         <header class="hero">
             <div class="hero-text">
-                <span class="badge">Especialista en Eficiencia & Automatización</span>
+                <span class="badge">Gestión Eficiente & Innovación</span>
                 <h1>Anuska</h1>
-                <div class="subtitle">Operaciones Digitales | Integración de IA | Coaching</div>
-                <p>Optimizando flujos de trabajo para liberar a las personas de la monotonía. Combinando más de 1.500 horas de sólido rigor administrativo con inteligencia artificial aplicada y desarrollo personal.</p>
-                <a href="#contacto" class="cta-btn">Contactar conmigo</a>
+                <div class="subtitle">Administración & Gestión Documental | Operaciones Digitales | Integración de IA</div>
+                <p>Especialista en organización operativa con más de 1.500 horas acreditadas en gestión administrativa, tramitación de expedientes y atenciones complejas. Combino el rigor procedimental con herramientas de Inteligencia Artificial para optimizar flujos de trabajo.</p>
+                <!-- Botón configurado para abrir el correo del usuario -->
+                <a href="mailto:tu-correo@ejemplo.com" class="cta-btn">Contactar conmigo</a>
             </div>
             
             <div class="video-box">
@@ -220,52 +212,72 @@
             </div>
         </header>
 
-        <!-- BLOQUES DE COMPETENCIAS -->
+        <!-- ÁREAS DE ESPECIALIZACIÓN -->
         <h2 class="section-title">Áreas de Especialización</h2>
         <div class="grid">
             
             <div class="card">
-                <h3>Diseño de Flujos & Automatización</h3>
-                <p>Identificación de cuellos de botella y diseño de procesos donde la IA genera borradores e informes, manteniendo la validación humana en el centro (Human-in-the-Loop).</p>
+                <h3>Administración & Gestión Documental</h3>
+                <p>Gestión rigurosa de expedientes, organización de archivos, soporte administrativo transversal y atención al usuario con máxima eficacia procedimental.</p>
                 <div class="tags">
-                    <span class="tag">Prompt Engineering</span>
-                    <span class="tag">Optimización</span>
-                    <span class="tag">Integración IA</span>
+                    <span class="tag">Gestión Documental</span>
+                    <span class="tag">Tramitación</span>
+                    <span class="tag">Atención Ciudadana</span>
                 </div>
             </div>
 
             <div class="card">
-                <h3>Gestión Operativa Avanzada</h3>
-                <p>Más de 1.500 horas acreditadas en gestión documental, tramitación de expedientes y organización eficiente de flujos administrativos complejos.</p>
+                <h3>Diseño de Flujos & IA Aplicada</h3>
+                <p>Optimización de procesos repetitivos integrando Inteligencia Artificial como asistente técnico. Reducción de tiempos manteniendo la validación humana.</p>
                 <div class="tags">
-                    <span class="tag">Administración</span>
-                    <span class="tag">Trazabilidad</span>
-                    <span class="tag">Atención Cliente</span>
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">Automatización</span>
+                    <span class="tag">Optimizacion</span>
                 </div>
             </div>
 
             <div class="card">
                 <h3>Desarrollo Humano & Coaching</h3>
-                <p>Máster en Psicología Holística y Coaching. Enfoque centrado en la persona para acompañar la adaptación tecnológica y potenciar el talento creativo.</p>
+                <p>Máster en Psicología Holística y Coaching. Enfoque orientado a las personas para facilitar la adaptación a nuevos procesos y herramientas tecnológicas.</p>
                 <div class="tags">
                     <span class="tag">Gestión del Cambio</span>
-                    <span class="tag">Empatía</span>
                     <span class="tag">Comunicación</span>
+                    <span class="tag">Empatía</span>
                 </div>
             </div>
 
         </div>
 
-        <!-- PROYECTO DESTACADO -->
+        <!-- TRAYECTORIA Y FORMACIÓN -->
+        <h2 class="section-title">Trayectoria & Experiencia</h2>
+        
+        <div class="card">
+            <h3>Operaciones Administrativas & Gestión de Servicios</h3>
+            <div class="date">Especialización Práctica & Formación de Alternancia</div>
+            <p>Ejecución de labores de soporte administrativo, organización documental, registro de datos y atención en entornos de trabajo estructurados.</p>
+        </div>
+
         <h2 class="section-title">Proyecto Destacado</h2>
-        <div class="card" style="margin-bottom: 40px;">
+        <div class="card">
             <h3>Proyecto Renacer — Aplicación Inteligente de Empleo</h3>
-            <p>Desarrollo funcional de una herramienta propia que utiliza la API de Gemini para clasificar ofertas de empleo, analizar encaje de perfiles y generar documentación adaptada de manera automatizada.</p>
-            <div class="tags" style="margin-top: 16px;">
+            <p>Desarrollo funcional de una herramienta que utiliza la API de Gemini para clasificar ofertas laborales, analizar encaje de perfiles y generar borradores adaptados.</p>
+            <div class="tags">
                 <span class="tag">API Gemini</span>
                 <span class="tag">React</span>
                 <span class="tag">Node.js</span>
-                <span class="tag">Prototipado</span>
+            </div>
+        </div>
+
+        <!-- FORMACIÓN DESTACADA -->
+        <h2 class="section-title">Formación Acreditada</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Especialización en Gestión Administrativa</h3>
+                <p>Más de 1.500 horas acreditadas en operativas de oficina, archivo y tramitación documental.</p>
+            </div>
+            <div class="card">
+                <h3>Máster en Psicología Holística y Coaching</h3>
+                <p>Especialización en acompañamiento personal, comunicación efectiva y gestión del cambio.</p>
             </div>
         </div>
 
