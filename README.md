@@ -4,6 +4,11 @@
 
 Bienvenido/a a mi portafolio profesional. Este espacio combina una sólida trayectoria en gestión administrativa e institucional con mi proceso de reinvención hacia la optimización de flujos de trabajo e integración ética de Inteligencia Artificial.
 
+<div class="certificacion">
+    <h3>Insignia de IBM</h3>
+    <p>Certificación oficial obtenida y verificada.</p>
+    <a href="https://www.credly.com/users/anuska-garcia" target="_blank">Ver perfil en Credly</a>
+</div>
 ---
 
 ## 💡 Mi Propósito
